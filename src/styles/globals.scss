@@ -518,7 +518,7 @@ p.def_p_forget {
   padding-right: 38px;
   overflow: auto;
 }
-
+.minh {min-height: 77vh;}
 p.def_had_txt {
   color: #FFF;
   font-size: 40px;
@@ -1103,3 +1103,35 @@ $primary: #88F;
 $secondary: #A2A9B0;
 $primary-dark: #11141C;
 
+button.def-btn {
+  border-radius: 15px;
+  background: $primary;
+  color: #FFF;
+  font-size: 14px;
+  text-transform: lowercase;
+  font-weight: 500;
+  line-height: normal;
+  width: 100px;
+  height: 36px;
+  &:hover{
+    background: #565698;
+  }
+}
+.footer {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    color: #fff;
+    font-size: 14px;
+  }
+  a {
+    position: relative;
+    transition: all 0.2s ease-out;
+    top: 0;
+    &:hover {
+      top: -3px;
+    }
+  }
+}

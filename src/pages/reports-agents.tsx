@@ -20,7 +20,7 @@ export default function ReportsAgents() {
         </Head>
         <div>
           <Box>
-            <Typography className="def_had_txt">Reports (for agents)</Typography>
+            <Typography className="def_had_txt">Reports | Results</Typography>
             <DateAndSelect />
             <ReportsAgentsOne />
             <ReportsAgentsTwoTabl />

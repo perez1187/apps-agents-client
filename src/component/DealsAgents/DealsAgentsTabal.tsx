@@ -3,27 +3,29 @@ import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 import { Box, Button, Typography } from '@mui/material';
 
 const columns: GridColDef[] = [
-    { field: 'id', headerName: 'Player', width: 210 },
-    { field: 'date', headerName: 'Date', width: 210 },
-    { field: 'club', headerName: 'Club', width: 210 },
-    { field: 'nickname', headerName: 'Nickname', width: 210 },
+    { field: 'id', headerName: 'Player', width: 130 },
+    { field: 'club', headerName: 'Club', width: 130 },
+    { field: 'nickname', headerName: 'Nickname', width: 130 },
+    { field: 'nicknameid', headerName: 'Nickname ID', width: 210 },
     { field: 'rakeback', headerName: 'Rakeback', width: 210 },
     { field: 'rebate', headerName: 'Rebate', width: 210 },
+    { field: 'createdat', headerName: 'Created at', width: 160 },
+    { field: 'updatedat', headerName: 'Updated at', width: 160 },
     { field: 'action', renderCell: (params) => {
         return (
           <div className="userBox">
             <Button className='edit_btn'>Edit</Button>
           </div>
         );
-        }, headerName: 'Action', width: 210 },
+        }, headerName: 'Action', width: 130 },
 ];
 
 const rows = [
-    { id: 2100559, date: '12/2/2024', club: '137795', nickname: 'Korill', rakeback: '$ 0.000', rebate: '$ 0.000', action: <div>11</div>,  },
-    { id: 2100559, date: '12/2/2024', club: '137795', nickname: 'Korill', rakeback: '$ 0.000', rebate: '$ 0.000', action: <div>11</div>,  },
-    { id: 2100559, date: '12/2/2024', club: '137795', nickname: 'Korill', rakeback: '$ 0.000', rebate: '$ 0.000', action: <div>11</div>,  },
-    { id: 2100559, date: '12/2/2024', club: '137795', nickname: 'Korill', rakeback: '$ 0.000', rebate: '$ 0.000', action: <div>11</div>,  },
-    { id: 2100559, date: '12/2/2024', club: '137795', nickname: 'Korill', rakeback: '$ 0.000', rebate: '$ 0.000', action: <div>11</div>,  },
+    { id: 2100559, club: '137795', nickname: 'Korill', nicknameid: '123456', rakeback: '$ 0.000', rebate: '$ 0.000', createdat: '12-02-2024', updatedat: '12-02-2024', action: <div>11</div>,  },
+    { id: 2100559, club: '137795', nickname: 'Korill', nicknameid: '123456', rakeback: '$ 0.000', rebate: '$ 0.000', createdat: '12-02-2024', updatedat: '12-02-2024', action: <div>11</div>,  },
+    { id: 2100559, club: '137795', nickname: 'Korill', nicknameid: '123456', rakeback: '$ 0.000', rebate: '$ 0.000', createdat: '12-02-2024', updatedat: '12-02-2024', action: <div>11</div>,  },
+    { id: 2100559, club: '137795', nickname: 'Korill', nicknameid: '123456', rakeback: '$ 0.000', rebate: '$ 0.000', createdat: '12-02-2024', updatedat: '12-02-2024', action: <div>11</div>,  },
+    { id: 2100559, club: '137795', nickname: 'Korill', nicknameid: '123456', rakeback: '$ 0.000', rebate: '$ 0.000', createdat: '12-02-2024', updatedat: '12-02-2024', action: <div>11</div>,  },
 ];
 
 export default function DealsAgentsTabal() {

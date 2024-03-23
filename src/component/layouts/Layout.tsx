@@ -16,6 +16,7 @@ import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 
 import Menu from './Menu';
+import Footer from './Footer';
 
 const drawerWidth = 250;
 
@@ -29,7 +30,7 @@ type LayoutProps = {
 const drawer = (
   <div className='dara_bx_cont_min'>
     <Toolbar className='dra_logo' >
-      <Link href="/">LOGO HERE</Link>
+      <Link href="/">&nbsp;</Link>
       
     </Toolbar>
     <Divider />
@@ -85,10 +86,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               >
                 <MenuIcon />
               </IconButton>
-              <Link href="" className='had_logo'>LOGO HERE</Link>
+              <Link href="" className='had_logo'>&nbsp;</Link>
               <Box className="right-header">
                 <ul>
-                  <li className='d-none-mob'>
+                  {/* <li className='d-none-mob'>
                     <Box className="blnc-box">
                       <img src='/img/wallet.svg' alt='' />
                       $0, 000
@@ -104,11 +105,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     <Button className="settings-box">
                       <SettingsOutlinedIcon />
                     </Button>
-                  </li>
+                  </li> */}
                   <li>
-                    <Link href="" className='user-block'>
+                    {/* <Link href="" className='user-block'>
                       <Person2OutlinedIcon />
-                    </Link>
+                    </Link> */}
+                    <Button className='def-btn'>Logout</Button>
                   </li>
                 </ul>
               </Box>
@@ -154,12 +156,16 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             className='min_bx_page'
           >
             {/* <Toolbar /> */}
-            {children}
+            <div className='minh'>
+              {children}
+            </div>
+            <Footer />
+            
           </Box>
         </Box>
 
       </main>
-      <footer>Footer</footer>
+      
     </div>
   );
 };
