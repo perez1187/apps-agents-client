@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 import { Box, Button, Typography } from '@mui/material';
+import CreateIcon from '@mui/icons-material/Create';
 
 const columns: GridColDef[] = [
     { field: 'id', headerName: 'Date', width: 120 },
@@ -16,7 +17,15 @@ const columns: GridColDef[] = [
     { field: 'nickname', headerName: 'Nickname', width: 150 },   
     { field: 'nicknameid', headerName: 'Nickname id', width: 160 },   
     { field: 'deal', headerName: 'Deal', width: 130 },   
-    { field: 'profitloss', headerName: 'Profit/Loss', width: 160 },   
+    { field: 'profitloss', renderCell: (params) => {
+        return (
+          <div className="userBox">
+            <Button className='edit_btn'>Add</Button>
+            &nbsp; &nbsp;
+            <Button className='edt_btn_ic'><CreateIcon /></Button>
+          </div>
+        );
+        }, headerName: 'Action', width: 160 },   
   ];
 
   
@@ -32,7 +41,7 @@ export default function ReportsAgentsTwoTabl() {
     return (
         <Box className='data_tabal_def_min mrgn_for'>
             <Box className='tabl_p_btn'>
-                <Typography>Settlements</Typography>
+                <Typography>Results</Typography>
                 <Button>Upload Report</Button>
             </Box>
             <div style={{ height: 368, width: '100%' }} className='data_tabal_def'>

@@ -28,7 +28,7 @@ export default function PlayerResults() {
         <div>
           <Box>
             <Box className='Choose_Player'>
-              <Typography className="def_had_txt">Player Results (for agents)</Typography>
+              <Typography className="def_had_txt">Player Results</Typography>
               <FormControl className='def_selct'>
                 {/* <span>APP</span> */}
                 <Select
@@ -54,37 +54,37 @@ export default function PlayerResults() {
               <Grid item xs={12} sm={6} md={6} xl={4} >
                 <Box className="player_results_graf_bx">
                   <Typography>Results</Typography>
-                  <img src="img/player_results_graf_1.png" alt="" />
+                  <img src="img/player_results_graf_01.png" alt="" />
                 </Box>
               </Grid>
               <Grid item xs={12} sm={6} md={6} xl={4} >
                 <Box className="player_results_graf_bx">
-                  <Typography>Results</Typography>
+                  <Typography>Profit/Loss</Typography>
                   <img src="img/player_results_graf_2.png" alt="" />
                 </Box>
               </Grid>
               <Grid item xs={12} sm={6} md={6} xl={4} >
                 <Box className="player_results_graf_bx">
-                  <Typography>Results</Typography>
+                  <Typography>Rake</Typography>
                   <img src="img/player_results_graf_2.png" alt="" />
                 </Box>
               </Grid>
               <Grid item xs={12} sm={6} md={6} xl={4} >
                 <Box className="player_results_graf_bx">
-                  <Typography>Results</Typography>
-                  <img src="img/player_results_graf_1.png" alt="" />
-                </Box>
-              </Grid>
-              <Grid item xs={12} sm={6} md={6} xl={4} >
-                <Box className="player_results_graf_bx">
-                  <Typography>Results</Typography>
+                  <Typography>Rakeback</Typography>
                   <img src="img/player_results_graf_2.png" alt="" />
                 </Box>
               </Grid>
               <Grid item xs={12} sm={6} md={6} xl={4} >
                 <Box className="player_results_graf_bx">
-                  <Typography>Results</Typography>
+                  <Typography>Action</Typography>
                   <img src="img/player_results_graf_2.png" alt="" />
+                </Box>
+              </Grid>
+              <Grid item xs={12} sm={6} md={6} xl={4} >
+                <Box className="player_results_graf_bx">
+                  <Typography>Earnings</Typography>
+                  <img src="img/player_results_graf_02.png" alt="" />
                 </Box>
               </Grid>
             </Grid>

@@ -48,16 +48,7 @@ export default function Settlements() {
     setToDate(picker.endDate._d.toISOString());
   };
 
-  //pop//
-  const [open, setOpen] = React.useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
+  
   return (
     <>
       <Layout>
@@ -71,7 +62,7 @@ export default function Settlements() {
           <Box>
             <Box className="tabl_p_btn_v2">
               <Typography className="def_had_txt">Settings</Typography>
-              <Button onClick={handleClickOpen}>Add Player</Button>
+              
             </Box>
             <DateAndSelect />
 
@@ -94,44 +85,13 @@ export default function Settlements() {
                 <span>Ferrranito</span>
               </Box>
             </Box>
-            <SettingsOneTabal />
+            {/* <SettingsOneTabal /> */}
           </Box>
         </div>
       </Layout>
 
 
-      <Dialog
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
-        className='def_modal dilog settlements_modl'
-      >
-        <Box>
-          <Box className="sign">
-            <Box className="sign_min">
-              <Typography component={"h2"} className='def_h2_hd mrg_colr'>Add Player</Typography>
-              <Box className="flx_log_input">
-                <Box component="form">
-                  <Box className="input-box">
-                    <input
-                      type="text"
-                      id="username"
-                      name="username"
-                      autoComplete="username"
-                      placeholder="User id"
-                      autoFocus
-                      className="user-input"
-                    />
-                  </Box>
-                </Box>
-                <Button className='def_btn'>Add</Button>
-              </Box>
-
-            </Box>
-          </Box>
-        </Box>
-      </Dialog>
+      
 
 
 

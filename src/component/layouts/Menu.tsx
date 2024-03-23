@@ -34,6 +34,27 @@ export default function Menu() {
         </li>
       </ul>
       <Box className='agent_arow'>
+        <Typography>Players</Typography>
+        <KeyboardArrowDownIcon />
+      </Box>
+      <ul className='draw_ul'>
+        <li>
+          <Link href="">Summary</Link>
+        </li>
+        <li>
+          <Link href="">Deals</Link>
+        </li>
+        <li>
+          <Link href="">Player Results</Link>
+        </li>
+        <li>
+          <Link href="">Settlements</Link>
+        </li>
+        <li>
+          <Link href="">Settings</Link>
+        </li>
+      </ul>
+      <Box className='agent_arow'>
         <Typography>Player</Typography>
         <KeyboardArrowDownIcon />
       </Box>
@@ -54,10 +75,10 @@ export default function Menu() {
           <Link href="">Settings</Link>
         </li>
       </ul>
-      <Link href="/" className='agent_arow agent_arow_v2'>
-        <Typography>Player</Typography>
+      {/* <Link href="/" className='agent_arow agent_arow_v2'>
+        <Typography>Pricing</Typography>
         <KeyboardArrowDownIcon />
-      </Link>
+      </Link> */}
     </Box>
     </>
   )
